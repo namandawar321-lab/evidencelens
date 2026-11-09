@@ -1,0 +1,273 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "live_20261030_152546",
+    "camera_id": "live_still_20261030_152446",
+    "source_dataset": "webcam",
+    "licence": "demo record 1",
+    "consent_basis": "people in this clip have consented / I own this clip",
+    "fps_native": 29.103,
+    "fps_processed": 9.701,
+    "frame_count": 869,
+    "duration_s": 29.859,
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "8da9063f81cb9f1e55fa03ae53f769d906dc1d6b004206230ec41513e0af3155"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "live_still_20261030_152446",
+      "polygon": [
+        [
+          533,
+          254
+        ],
+        [
+          426,
+          306
+        ],
+        [
+          469,
+          471
+        ],
+        [
+          637,
+          348
+        ]
+      ],
+      "label": "restricted area",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-1",
+      "class": "person",
+      "class_votes": {
+        "person": 132
+      },
+      "t_start": 0.0,
+      "t_end": 14.122,
+      "n_frames": 132,
+      "mean_conf": 0.859,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-4",
+      "class": "suitcase",
+      "class_votes": {
+        "suitcase": 13
+      },
+      "t_start": 3.814,
+      "t_end": 8.762,
+      "n_frames": 13,
+      "mean_conf": 0.575,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-5",
+      "class": "person",
+      "class_votes": {
+        "person": 5
+      },
+      "t_start": 3.814,
+      "t_end": 5.463,
+      "n_frames": 5,
+      "mean_conf": 0.572,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-11",
+      "class": "person",
+      "class_votes": {
+        "person": 8
+      },
+      "t_start": 11.854,
+      "t_end": 13.504,
+      "n_frames": 8,
+      "mean_conf": 0.622,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-14",
+      "class": "person",
+      "class_votes": {
+        "person": 144
+      },
+      "t_start": 12.37,
+      "t_end": 27.523,
+      "n_frames": 144,
+      "mean_conf": 0.899,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-24",
+      "class": "person",
+      "class_votes": {
+        "person": 31
+      },
+      "t_start": 26.183,
+      "t_end": 29.687,
+      "n_frames": 31,
+      "mean_conf": 0.736,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-29",
+      "class": "person",
+      "class_votes": {
+        "person": 13
+      },
+      "t_start": 27.007,
+      "t_end": 28.553,
+      "n_frames": 13,
+      "mean_conf": 0.819,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-30",
+      "class": "person",
+      "class_votes": {
+        "person": 5
+      },
+      "t_start": 27.11,
+      "t_end": 27.626,
+      "n_frames": 5,
+      "mean_conf": 0.742,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-33",
+      "class": "person",
+      "class_votes": {
+        "person": 6
+      },
+      "t_start": 27.729,
+      "t_end": 28.244,
+      "n_frames": 6,
+      "mean_conf": 0.69,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-37",
+      "class": "person",
+      "class_votes": {
+        "person": 10
+      },
+      "t_start": 28.76,
+      "t_end": 29.687,
+      "n_frames": 10,
+      "mean_conf": 0.772,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [
+    {
+      "type": "zone_intrusion",
+      "t_start": 12.988,
+      "t_end": 15.359,
+      "track_ids": [
+        "TRK-14"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-14 inside zone Z1 from 13.0s to 15.4s (dwell 2.4s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.899,
+      "event_id": "EV-0001",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0001_start.jpg",
+        "frames/EV-0001_end.jpg"
+      ],
+      "clip_path": "clips/EV-0001.mp4"
+    },
+    {
+      "type": "zone_intrusion",
+      "t_start": 20.307,
+      "t_end": 22.987,
+      "track_ids": [
+        "TRK-14"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-14 inside zone Z1 from 20.3s to 23.0s (dwell 2.7s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.899,
+      "event_id": "EV-0002",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0002_start.jpg",
+        "frames/EV-0002_end.jpg"
+      ],
+      "clip_path": "clips/EV-0002.mp4"
+    }
+  ],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        29.859
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        29.859
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": true,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 1,
+    "person_tracks": 10
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 9.701,
+    "frame_stride": 3,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T09:56:30+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "zone_id": "Z1",
+  "camera_id": "live_still_20261106_130608",
+  "polygon": [
+    [
+      53,
+      402
+    ],
+    [
+      52,
+      472
+    ],
+    [
+      309,
+      451
+    ],
+    [
+      183,
+      384
+    ]
+  ],
+  "label": "restricted area",
+  "version": 1
+}

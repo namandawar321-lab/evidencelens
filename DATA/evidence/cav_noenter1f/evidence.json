@@ -1,0 +1,131 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "cav_noenter1f",
+    "camera_id": "cav_noenter1f",
+    "source_dataset": "CAVIAR",
+    "licence": "CC BY-SA, attribution required",
+    "consent_basis": "n/a",
+    "fps_native": 25.0,
+    "fps_processed": 12.5,
+    "frame_count": 725,
+    "duration_s": 29.0,
+    "resolution": [
+      384,
+      288
+    ],
+    "sha256": "4706a4564679685f9ea8d82e2b68b1703b5fbba7d85f2fad50e2d1d1b56bcb39"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "cav_noenter1f",
+      "polygon": [
+        [
+          217,
+          112
+        ],
+        [
+          217,
+          156
+        ],
+        [
+          327,
+          155
+        ],
+        [
+          325,
+          110
+        ]
+      ],
+      "label": "shop interior floor",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-5",
+      "class": "person",
+      "class_votes": {
+        "person": 60
+      },
+      "t_start": 15.52,
+      "t_end": 20.4,
+      "n_frames": 60,
+      "mean_conf": 0.779,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-9",
+      "class": "person",
+      "class_votes": {
+        "person": 28
+      },
+      "t_start": 21.36,
+      "t_end": 24.56,
+      "n_frames": 28,
+      "mean_conf": 0.763,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-12",
+      "class": "person",
+      "class_votes": {
+        "person": 11
+      },
+      "t_start": 27.84,
+      "t_end": 28.88,
+      "n_frames": 11,
+      "mean_conf": 0.666,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 3,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        29.0
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        29.0
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 6
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.5,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T02:03:43+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

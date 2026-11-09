@@ -1,0 +1,33 @@
+clip_id,question,validated,attempts,abstained,first_pass
+cav_walk1,Was he trying to steal something?,True,1,True,True
+cav_walk1,Did anyone enter the restricted zone?,True,2,False,False
+cav_walk1,Did anyone enter the zone before 00:10?,True,1,False,True
+cav_walk1,Was the person injured?,True,1,True,True
+live_20261030_120041,Did anyone enter the restricted zone?,True,2,False,False
+cav_walk1,Was an object left unattended?,True,1,True,True
+live_20261030_152546,Did anyone enter the zone before 00:10?,True,1,True,True
+cav_walk1,Did the person look nervous?,True,1,True,True
+live_20261030_133846,Did anyone enter the restricted zone?,True,2,False,False
+cav_enter1,Did anyone enter the restricted zone?,True,1,False,True
+cav_walk1,What colour is their shirt?,True,1,True,True
+cav_enter1f,Did anyone enter the restricted zone?,True,1,False,True
+cav_walk1,Who is the person in the zone?,True,1,True,True
+cav_walk1,Is this a bank or a shop?,True,1,True,True
+live_20261030_131248,Did anyone enter the zone before 00:10?,True,1,True,True
+cav_walk1,Is the person male or female?,True,1,True,True
+bagleftreal,Was an object left unattended?,True,1,False,True
+cav_walk1,Did anyone enter the zone at 00:50?,True,1,True,True
+live_20261030_101355,Was an object left unattended?,True,1,True,True
+live_20261030_104920,Did anyone enter the restricted zone?,True,1,False,True
+live_20261030_105903,Did anyone enter the restricted zone?,True,2,False,False
+cav_enter1f,Did anyone enter the restricted zone?,True,1,False,True
+cav_walk1,Did anyone fall?,True,1,True,True
+live_20261030_123408,Did anyone enter the restricted zone?,True,2,False,False
+cav_walk1,Did anyone enter the restricted zone?,True,2,False,False
+live_20261030_131248,Did anyone enter the restricted zone?,True,1,False,True
+bagleftreal,Was an object left unattended?,True,1,False,True
+cav_walk1,What happened after the clip ended?,True,1,True,True
+cav_walk2,Did anyone enter the restricted zone?,True,2,False,False
+live_20261030_122816,Did anyone enter the restricted zone?,True,2,False,False
+live_20261030_152546,Did anyone enter the restricted zone?,True,1,False,True
+live_20261030_104920,Was an object left unattended?,True,2,False,False

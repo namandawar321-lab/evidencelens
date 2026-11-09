@@ -1,0 +1,60 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "live_20261030_101355",
+    "camera_id": "live_20261030_101355",
+    "source_dataset": "webcam",
+    "licence": "local measurement, operator present",
+    "consent_basis": "operator requested the live recording",
+    "fps_native": 29.973,
+    "fps_processed": 9.991,
+    "frame_count": 150,
+    "duration_s": 5.004,
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "a9e5cb49bacc978cb1275f436b2e520aa3077c9a11a37f746195cf7d68cfbbc1"
+  },
+  "zones": [],
+  "tracks": [],
+  "tracks_omitted_short": {
+    "count": 0,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        5.004
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": false,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 0
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 9.991,
+    "frame_stride": 3,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T04:44:49+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

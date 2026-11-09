@@ -1,0 +1,6 @@
+- Watch each clip without opening EvidenceLens results.
+- true_zone_entries: each time a person's feet are inside the marked zone, write start-end in seconds, for example 3.5-5.5. Separate several with a semicolon. Write none if nobody enters. Write na if the clip has no zone.
+- Count very short entries too. Write what you see, not what the system should detect.
+- true_bag_left: yes if a bag is left alone while its owner walks away; no if the bag stays with its owner; na if there is no bag.
+- Give times to the nearest 0.5 s using the video player.
+- Annotator A and B work separately and compare only after both are finished.

@@ -1,0 +1,57 @@
+# Secrets
+.env
+.env.*
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Dependencies
+node_modules/
+
+# Model weights
+*.pt
+*.onnx
+*.engine
+
+# Video
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Recorded and uploaded clips. On disk this folder is DATA/CLIPS.
+data/CLIPS/
+data/clips/
+
+# Derived pictures and event clips. evidence.json is kept.
+data/annotated/
+data/evidence/**/frames/
+data/evidence/**/clips/
+data/zones/stills/
+
+# Language-model answer cache and the reviewer log
+data/llm_cache/
+data/review_log.jsonl
+
+# Live-monitor stop flag
+data/live_stop.flag
+*.flag
+
+# Scratch folder and screenshot dumps
+scratch/
+screenshots/
+
+# Temp
+tmp/
+temp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

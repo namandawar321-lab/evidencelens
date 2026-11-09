@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "bagstays",
+    "camera_id": "bagstays",
+    "source_dataset": "self",
+    "licence": "self-recorded, written consent",
+    "consent_basis": "self-recorded, participants consented",
+    "fps_native": 25.0,
+    "fps_processed": 12.5,
+    "frame_count": 849,
+    "duration_s": 33.96,
+    "resolution": [
+      848,
+      478
+    ],
+    "sha256": "0e29c35270b4abd66a16d2d8c4cd0e2059e3defbd16129cda93821d98a132506"
+  },
+  "zones": [],
+  "tracks": [
+    {
+      "track_id": "TRK-1",
+      "class": "person",
+      "class_votes": {
+        "person": 85
+      },
+      "t_start": 0.0,
+      "t_end": 7.44,
+      "n_frames": 85,
+      "mean_conf": 0.808,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-2",
+      "class": "backpack",
+      "class_votes": {
+        "backpack": 29
+      },
+      "t_start": 1.76,
+      "t_end": 4.0,
+      "n_frames": 29,
+      "mean_conf": 0.649,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-4",
+      "class": "person",
+      "class_votes": {
+        "person": 7
+      },
+      "t_start": 3.68,
+      "t_end": 4.16,
+      "n_frames": 7,
+      "mean_conf": 0.813,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-5",
+      "class": "backpack",
+      "class_votes": {
+        "backpack": 107,
+        "handbag": 21,
+        "suitcase": 13
+      },
+      "t_start": 3.84,
+      "t_end": 20.8,
+      "n_frames": 141,
+      "mean_conf": 0.612,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-6",
+      "class": "person",
+      "class_votes": {
+        "person": 6
+      },
+      "t_start": 4.96,
+      "t_end": 5.36,
+      "n_frames": 6,
+      "mean_conf": 0.718,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-11",
+      "class": "person",
+      "class_votes": {
+        "person": 332
+      },
+      "t_start": 7.36,
+      "t_end": 33.84,
+      "n_frames": 332,
+      "mean_conf": 0.865,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-18",
+      "class": "backpack",
+      "class_votes": {
+        "backpack": 115
+      },
+      "t_start": 23.52,
+      "t_end": 33.84,
+      "n_frames": 115,
+      "mean_conf": 0.539,
+      "fragmented": true,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        33.96
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": true,
+    "zone_intrusion": false,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 3,
+    "person_tracks": 5
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 1280,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.5,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-27T03:39:44+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

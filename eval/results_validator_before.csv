@@ -1,0 +1,27 @@
+name,expected,actual,pass_fail,error
+unknown_event_id,reject,reject,pass,claim 0: unknown id(s) ['EV-9999']; positive_evidence must cite an event with status confirmed_by_rule
+unknown_track_id,reject,reject,pass,claim 0: unknown id(s) ['TRK-9999']; positive_evidence must cite an event with status confirmed_by_rule
+time_outside_half_second,reject,reject,pass,"claim 0: time range [0.0, 1.0] outside the cited spans [3.7, 5.4] (+/-0.5s)"
+yes_without_confirmed_event,reject,reject,pass,positive_evidence must cite an event with status confirmed_by_rule
+yes_cites_unconfirmed_event,reject,reject,pass,positive_evidence must cite an event with status confirmed_by_rule
+no_without_cov,reject,reject,pass,"verified_negative must cite a COV-<rule> id, not a track or an event"
+no_when_not_eligible,reject,reject,pass,verified_negative is not eligible for unattended_object
+no_wrong_rule_cov,reject,accept,fail,
+no_while_event_exists,reject,reject,pass,verified_negative range overlaps EV-0001
+abstain_with_claims,reject,reject,pass,abstained answers must have no claims
+cannot_determine_but_not_abstained,reject,accept,fail,
+bad_decision_value,reject,reject,pass,bad decision value: 'maybe'
+missing_required_fields,reject,reject,pass,missing field: reason; missing field: claims; missing field: human_review_required
+claims_or_cited_ids_wrong_type,reject,reject,pass,"claim 0: unknown id(s) ['E', 'V', '-', '0', '0', '0', '1']; positive_evidence must cite an event with status confirmed_by_rule"
+yes_empty_claims,reject,reject,pass,a non-abstained answer must have at least one claim; positive_evidence must cite an event with status confirmed_by_rule
+time_start_after_end,reject,accept,fail,
+time_range_as_strings,reject,accept,fail,
+extra_unknown_field,gap,accept,pass,
+yes_event_from_other_clip,reject,reject,pass,claim 0: unknown id(s) ['EV-0001']; positive_evidence must cite an event with status confirmed_by_rule
+reply_not_an_object,reject,error,fail,TypeError: argument of type 'NoneType' is not iterable
+good_yes_zone,accept,accept,pass,
+good_yes_bag,accept,accept,pass,
+good_no_zone,accept,accept,pass,
+good_abstain,accept,accept,pass,
+good_no_window_before_event,accept,accept,pass,
+good_yes_inside_tolerance,accept,accept,pass,

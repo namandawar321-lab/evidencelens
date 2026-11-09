@@ -1,0 +1,160 @@
+[
+  {
+    "clip_id": "bagleftreal",
+    "question": "Was an object left unattended?",
+    "answer_json": {
+      "decision": "yes",
+      "abstained": false,
+      "reason": "positive_evidence",
+      "claims": [
+        {
+          "text": "An unattended object event was confirmed by rule between 25.52 and 36.4 seconds.",
+          "cited_ids": [
+            "EV-0001"
+          ],
+          "cited_time_range": [
+            25.52,
+            36.4
+          ]
+        }
+      ],
+      "human_review_required": true,
+      "_latency_ms": 96808,
+      "_attempts": 1,
+      "_api_retries": 0,
+      "_api_errors": [],
+      "_validated": true,
+      "_clip_id": "bagleftreal",
+      "_condition": "B",
+      "_model": "gemini-3.6-flash"
+    },
+    "console_log": "",
+    "run_time": "2026-10-27T09:16:06+05:30",
+    "model": "gemini-3.6-flash"
+  },
+  {
+    "clip_id": "bagleftreal",
+    "question": "Why did he leave the bag?",
+    "answer_json": {
+      "decision": "cannot_determine",
+      "abstained": true,
+      "reason": "insufficient_evidence",
+      "claims": [],
+      "human_review_required": true,
+      "_latency_ms": 3299,
+      "_attempts": 1,
+      "_api_retries": 0,
+      "_api_errors": [],
+      "_validated": true,
+      "_clip_id": "bagleftreal",
+      "_condition": "B",
+      "_model": "gemini-3.6-flash"
+    },
+    "console_log": "",
+    "run_time": "2026-10-27T09:16:20+05:30",
+    "model": "gemini-3.6-flash"
+  },
+  {
+    "clip_id": "bagleftreal",
+    "question": "Did anyone enter a restricted area?",
+    "answer_json": {
+      "decision": "cannot_determine",
+      "abstained": true,
+      "reason": "insufficient_evidence",
+      "claims": [],
+      "human_review_required": true,
+      "_latency_ms": 4809,
+      "_attempts": 1,
+      "_api_retries": 0,
+      "_api_errors": [],
+      "_validated": true,
+      "_clip_id": "bagleftreal",
+      "_condition": "B",
+      "_model": "gemini-3.6-flash"
+    },
+    "console_log": "",
+    "run_time": "2026-10-27T09:16:39+05:30",
+    "model": "gemini-3.6-flash"
+  },
+  {
+    "clip_id": "bagleftreal",
+    "question": "Did anyone fall?",
+    "answer_json": {
+      "decision": "cannot_determine",
+      "abstained": true,
+      "reason": "insufficient_evidence",
+      "claims": [],
+      "human_review_required": true,
+      "_latency_ms": 3806,
+      "_attempts": 1,
+      "_api_retries": 0,
+      "_api_errors": [],
+      "_validated": true,
+      "_clip_id": "bagleftreal",
+      "_condition": "B",
+      "_model": "gemini-3.6-flash"
+    },
+    "console_log": "",
+    "run_time": "2026-10-27T09:16:43+05:30",
+    "model": "gemini-3.6-flash"
+  },
+  {
+    "clip_id": "bagstays",
+    "question": "Was an object left unattended?",
+    "answer_json": {
+      "decision": "no",
+      "abstained": false,
+      "reason": "verified_negative",
+      "claims": [
+        {
+          "text": "No unattended object was detected within the monitored video coverage.",
+          "cited_ids": [
+            "COV-unattended_object"
+          ],
+          "cited_time_range": [
+            0.0,
+            33.96
+          ]
+        }
+      ],
+      "human_review_required": true,
+      "_latency_ms": 79422,
+      "_attempts": 2,
+      "_api_retries": 3,
+      "_api_errors": [
+        "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+        "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+        "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+      ],
+      "_validated": true,
+      "_clip_id": "bagstays",
+      "_condition": "B",
+      "_model": "gemini-3.6-flash"
+    },
+    "console_log": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\r\n  validator rejected attempt 1: ['human_review_required must be true']\r\n503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\r\n503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}\r\n",
+    "run_time": "2026-10-27T09:18:03+05:30",
+    "model": "gemini-3.6-flash"
+  },
+  {
+    "clip_id": "caviar_leftbag_01",
+    "question": "Was an object left unattended?",
+    "answer_json": {
+      "decision": "cannot_determine",
+      "abstained": true,
+      "reason": "insufficient_evidence",
+      "claims": [],
+      "human_review_required": true,
+      "_latency_ms": 3647,
+      "_attempts": 1,
+      "_api_retries": 0,
+      "_api_errors": [],
+      "_validated": true,
+      "_clip_id": "caviar_leftbag_01",
+      "_condition": "B",
+      "_model": "gemini-3.6-flash"
+    },
+    "console_log": "",
+    "run_time": "2026-10-27T09:33:42+05:30",
+    "model": "gemini-3.6-flash"
+  }
+]

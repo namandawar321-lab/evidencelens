@@ -1,0 +1,24 @@
+{
+  "zone_id": "Z1",
+  "camera_id": "cav_noenter1f_m",
+  "polygon": [
+    [
+      215,
+      98
+    ],
+    [
+      215,
+      155
+    ],
+    [
+      304,
+      155
+    ],
+    [
+      295,
+      102
+    ]
+  ],
+  "label": "shop floor, mannequin excluded",
+  "version": 1
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "cav_walk2",
+    "camera_id": "cav_walk2",
+    "source_dataset": "CAVIAR",
+    "licence": "CC BY-SA, attribution required",
+    "consent_basis": "n/a",
+    "fps_native": 25.0,
+    "fps_processed": 12.5,
+    "frame_count": 1063,
+    "duration_s": 42.52,
+    "resolution": [
+      384,
+      288
+    ],
+    "sha256": "ec556f4e260702035a59466bcb23f30080fb58136bb5fb2df642bb28e88e4507"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "cav_walk2",
+      "polygon": [
+        [
+          197,
+          76
+        ],
+        [
+          182,
+          167
+        ],
+        [
+          309,
+          174
+        ],
+        [
+          308,
+          78
+        ]
+      ],
+      "label": "path patch",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-4",
+      "class": "person",
+      "class_votes": {
+        "person": 28
+      },
+      "t_start": 4.24,
+      "t_end": 7.2,
+      "n_frames": 28,
+      "mean_conf": 0.768,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-5",
+      "class": "person",
+      "class_votes": {
+        "person": 5
+      },
+      "t_start": 7.52,
+      "t_end": 8.4,
+      "n_frames": 5,
+      "mean_conf": 0.71,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-8",
+      "class": "person",
+      "class_votes": {
+        "person": 11
+      },
+      "t_start": 13.76,
+      "t_end": 15.68,
+      "n_frames": 11,
+      "mean_conf": 0.553,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-16",
+      "class": "person",
+      "class_votes": {
+        "person": 6
+      },
+      "t_start": 41.84,
+      "t_end": 42.4,
+      "n_frames": 6,
+      "mean_conf": 0.585,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 2,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        42.52
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        42.52
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 6
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.5,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T01:19:54+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

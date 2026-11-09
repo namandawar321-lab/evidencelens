@@ -1,0 +1,209 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "live_20261030_104920",
+    "camera_id": "live_20261030_104920",
+    "source_dataset": "webcam",
+    "licence": "self recorded,written consent",
+    "consent_basis": "people in this clip have consented / I own this clip",
+    "fps_native": 30.005,
+    "fps_processed": 10.002,
+    "frame_count": 901,
+    "duration_s": 30.028,
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "103ff35322244ea522fdb82eeb7e27eec4f9bd8db3a5b364fa6918033259ad59"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "live_20261030_104920",
+      "polygon": [
+        [
+          166,
+          376
+        ],
+        [
+          115,
+          470
+        ],
+        [
+          301,
+          474
+        ],
+        [
+          317,
+          375
+        ]
+      ],
+      "label": "restricted area",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-2",
+      "class": "person",
+      "class_votes": {
+        "person": 122
+      },
+      "t_start": 4.599,
+      "t_end": 16.697,
+      "n_frames": 122,
+      "mean_conf": 0.858,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-3",
+      "class": "handbag",
+      "class_votes": {
+        "handbag": 5
+      },
+      "t_start": 5.499,
+      "t_end": 6.299,
+      "n_frames": 5,
+      "mean_conf": 0.602,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-5",
+      "class": "handbag",
+      "class_votes": {
+        "handbag": 5
+      },
+      "t_start": 6.999,
+      "t_end": 7.399,
+      "n_frames": 5,
+      "mean_conf": 0.738,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-7",
+      "class": "handbag",
+      "class_votes": {
+        "handbag": 7,
+        "suitcase": 1
+      },
+      "t_start": 8.698,
+      "t_end": 12.498,
+      "n_frames": 8,
+      "mean_conf": 0.581,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-11",
+      "class": "person",
+      "class_votes": {
+        "person": 65
+      },
+      "t_start": 23.196,
+      "t_end": 29.895,
+      "n_frames": 65,
+      "mean_conf": 0.816,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 2,
+    "min_frames": 5
+  },
+  "events": [
+    {
+      "type": "zone_intrusion",
+      "t_start": 7.399,
+      "t_end": 14.797,
+      "track_ids": [
+        "TRK-2"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-2 inside zone Z1 from 7.4s to 14.8s (dwell 7.4s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.858,
+      "event_id": "EV-0001",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0001_start.jpg",
+        "frames/EV-0001_end.jpg"
+      ],
+      "clip_path": "clips/EV-0001.mp4"
+    },
+    {
+      "type": "zone_intrusion",
+      "t_start": 24.696,
+      "t_end": 29.095,
+      "track_ids": [
+        "TRK-11"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-11 inside zone Z1 from 24.7s to 29.1s (dwell 4.4s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.816,
+      "event_id": "EV-0002",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0002_start.jpg",
+        "frames/EV-0002_end.jpg"
+      ],
+      "clip_path": "clips/EV-0002.mp4"
+    }
+  ],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        30.028
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        30.028
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": true,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 4,
+    "person_tracks": 3
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 10.002,
+    "frame_stride": 3,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T05:22:39+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

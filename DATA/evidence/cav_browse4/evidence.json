@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "cav_browse4",
+    "camera_id": "cav_browse4",
+    "source_dataset": "CAVIAR",
+    "licence": "CC BY-SA, attribution required",
+    "consent_basis": "n/a",
+    "fps_native": 25.0,
+    "fps_processed": 12.5,
+    "frame_count": 1147,
+    "duration_s": 45.88,
+    "resolution": [
+      384,
+      288
+    ],
+    "sha256": "c1ed7707aaf9e08be06b0c8017d57e24b6f7d7a1b14f08e3bc3392085dcb5a35"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "cav_browse4",
+      "polygon": [
+        [
+          102,
+          74
+        ],
+        [
+          93,
+          112
+        ],
+        [
+          145,
+          110
+        ],
+        [
+          152,
+          61
+        ]
+      ],
+      "label": "reception desk area",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-1",
+      "class": "person",
+      "class_votes": {
+        "person": 55
+      },
+      "t_start": 0.0,
+      "t_end": 5.04,
+      "n_frames": 55,
+      "mean_conf": 0.766,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        45.88
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        45.88
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 2
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.5,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T01:20:22+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

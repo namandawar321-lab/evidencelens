@@ -1,0 +1,169 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "live_20261030_105903",
+    "camera_id": "live_20261030_105903",
+    "source_dataset": "webcam",
+    "licence": "self record consent 2",
+    "consent_basis": "people in this clip have consented / I own this clip",
+    "fps_native": 29.994,
+    "fps_processed": 9.998,
+    "frame_count": 600,
+    "duration_s": 20.004,
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "fab62a828fc5aa52bb3b401b5aaf01c13e77276b2cee0728892dc64a57f7e785"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "live_20261030_105903",
+      "polygon": [
+        [
+          198,
+          348
+        ],
+        [
+          119,
+          433
+        ],
+        [
+          302,
+          464
+        ],
+        [
+          331,
+          370
+        ]
+      ],
+      "label": "restricted area",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-1",
+      "class": "person",
+      "class_votes": {
+        "person": 110
+      },
+      "t_start": 0.6,
+      "t_end": 11.502,
+      "n_frames": 110,
+      "mean_conf": 0.88,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-3",
+      "class": "person",
+      "class_votes": {
+        "person": 34
+      },
+      "t_start": 16.604,
+      "t_end": 19.904,
+      "n_frames": 34,
+      "mean_conf": 0.907,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [
+    {
+      "type": "zone_intrusion",
+      "t_start": 2.501,
+      "t_end": 9.602,
+      "track_ids": [
+        "TRK-1"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-1 inside zone Z1 from 2.5s to 9.6s (dwell 7.1s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.88,
+      "event_id": "EV-0001",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0001_start.jpg",
+        "frames/EV-0001_end.jpg"
+      ],
+      "clip_path": "clips/EV-0001.mp4"
+    },
+    {
+      "type": "zone_intrusion",
+      "t_start": 17.804,
+      "t_end": 19.004,
+      "track_ids": [
+        "TRK-3"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-3 inside zone Z1 from 17.8s to 19.0s (dwell 1.2s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.907,
+      "event_id": "EV-0002",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0002_start.jpg",
+        "frames/EV-0002_end.jpg"
+      ],
+      "clip_path": "clips/EV-0002.mp4"
+    }
+  ],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        20.004
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        20.004
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": true,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 1,
+    "person_tracks": 2
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 9.998,
+    "frame_stride": 3,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T05:30:21+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

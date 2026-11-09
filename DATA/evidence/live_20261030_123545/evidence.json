@@ -1,0 +1,243 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "live_20261030_123545",
+    "camera_id": "live_20261030_123545",
+    "source_dataset": "webcam",
+    "licence": "local measurement, operator present",
+    "consent_basis": "operator requested the live recording",
+    "fps_native": 14.897,
+    "fps_processed": 14.897,
+    "frame_count": 149,
+    "duration_s": 10.002,
+    "resolution": [
+      640,
+      480
+    ],
+    "sha256": "6ed127b1977abc9f0420087612eac442e42b3575f982beff69cd91e26095a171"
+  },
+  "zones": [],
+  "tracks": [
+    {
+      "track_id": "TRK-1",
+      "class": "person",
+      "class_votes": {
+        "person": 149
+      },
+      "t_start": 0.0,
+      "t_end": 9.935,
+      "n_frames": 149,
+      "mean_conf": 0.933,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-2",
+      "class": "person",
+      "class_votes": {
+        "person": 149
+      },
+      "t_start": 0.0,
+      "t_end": 9.935,
+      "n_frames": 149,
+      "mean_conf": 0.917,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-3",
+      "class": "person",
+      "class_votes": {
+        "person": 114
+      },
+      "t_start": 0.0,
+      "t_end": 9.935,
+      "n_frames": 114,
+      "mean_conf": 0.756,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-4",
+      "class": "person",
+      "class_votes": {
+        "person": 29
+      },
+      "t_start": 0.0,
+      "t_end": 2.014,
+      "n_frames": 29,
+      "mean_conf": 0.548,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-7",
+      "class": "person",
+      "class_votes": {
+        "person": 143
+      },
+      "t_start": 0.269,
+      "t_end": 9.935,
+      "n_frames": 143,
+      "mean_conf": 0.764,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-9",
+      "class": "person",
+      "class_votes": {
+        "person": 11
+      },
+      "t_start": 0.336,
+      "t_end": 1.477,
+      "n_frames": 11,
+      "mean_conf": 0.71,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-11",
+      "class": "person",
+      "class_votes": {
+        "person": 50
+      },
+      "t_start": 0.671,
+      "t_end": 6.579,
+      "n_frames": 50,
+      "mean_conf": 0.705,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-12",
+      "class": "person",
+      "class_votes": {
+        "person": 13
+      },
+      "t_start": 0.671,
+      "t_end": 3.356,
+      "n_frames": 13,
+      "mean_conf": 0.573,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-13",
+      "class": "person",
+      "class_votes": {
+        "person": 33
+      },
+      "t_start": 2.148,
+      "t_end": 6.176,
+      "n_frames": 33,
+      "mean_conf": 0.649,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-15",
+      "class": "person",
+      "class_votes": {
+        "person": 79
+      },
+      "t_start": 3.222,
+      "t_end": 9.935,
+      "n_frames": 79,
+      "mean_conf": 0.81,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-18",
+      "class": "person",
+      "class_votes": {
+        "person": 17
+      },
+      "t_start": 4.095,
+      "t_end": 5.169,
+      "n_frames": 17,
+      "mean_conf": 0.696,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-22",
+      "class": "person",
+      "class_votes": {
+        "person": 30
+      },
+      "t_start": 6.713,
+      "t_end": 9.935,
+      "n_frames": 30,
+      "mean_conf": 0.513,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-24",
+      "class": "person",
+      "class_votes": {
+        "person": 6
+      },
+      "t_start": 8.19,
+      "t_end": 9.935,
+      "n_frames": 6,
+      "mean_conf": 0.533,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-26",
+      "class": "person",
+      "class_votes": {
+        "person": 10
+      },
+      "t_start": 8.458,
+      "t_end": 9.062,
+      "n_frames": 10,
+      "mean_conf": 0.556,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        10.002
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": false,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 15
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 14.897,
+    "frame_stride": 1,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T07:06:04+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

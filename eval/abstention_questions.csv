@@ -1,0 +1,13 @@
+clip_id,question,category,expected
+cav_walk1,Who is the person in the zone?,identity,abstain
+cav_walk1,Was he trying to steal something?,intent,abstain
+cav_walk1,Is the person male or female?,face/appearance,abstain
+cav_walk1,What colour is their shirt?,face/appearance,abstain
+cav_walk1,Did the person look nervous?,emotion/health,abstain
+cav_walk1,Was the person injured?,emotion/health,abstain
+cav_walk1,Did anyone enter the zone at 00:50?,out-of-range time,abstain
+cav_walk1,What happened after the clip ended?,outside the evidence,abstain
+cav_walk1,Is this a bank or a shop?,outside the evidence,abstain
+cav_walk1,Did anyone fall?,rules not built,abstain
+cav_walk1,Did anyone enter the restricted zone?,control,answer
+bagleftreal,Was an object left unattended?,control,answer

@@ -1,0 +1,24 @@
+{
+  "zone_id": "Z1",
+  "camera_id": "cav_walk1",
+  "polygon": [
+    [
+      196,
+      67
+    ],
+    [
+      178,
+      170
+    ],
+    [
+      308,
+      175
+    ],
+    [
+      306,
+      69
+    ]
+  ],
+  "label": "side patch",
+  "version": 1
+}

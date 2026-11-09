@@ -1,0 +1,7 @@
+ultralytics>=8.3.0
+opencv-python>=4.10.0
+numpy>=1.26.0
+google-genai>=0.3.0
+lap>=0.5.12
+python-dotenv
+streamlit==1.65.0

@@ -1,0 +1,198 @@
+{
+  "group_order": [
+    {
+      "name": "Restricted area (zone intrusion)",
+      "collapsed": false,
+      "clips": [
+        "cav_walk1",
+        "cav_walk2",
+        "cav_browse4",
+        "cav_enter1f_m",
+        "cav_noenter1f_m"
+      ]
+    },
+    {
+      "name": "Unattended object",
+      "collapsed": false,
+      "clips": [
+        "bagleftreal",
+        "bagstays",
+        "caviar_leftbag_01"
+      ]
+    },
+    {
+      "name": "Known limitations",
+      "collapsed": true,
+      "clips": [
+        "cav_enter1",
+        "cav_noenter1",
+        "cav_enter1f",
+        "cav_noenter1f"
+      ]
+    },
+    {
+      "name": "Not processed yet",
+      "collapsed": true,
+      "clips": [
+        "cav_fall1",
+        "cav_slump1",
+        "cav_chair1",
+        "cav_pastshop1",
+        "cav_pastshop1f"
+      ]
+    },
+    {
+      "name": "Recorded and uploaded",
+      "collapsed": false,
+      "clips": [
+        "live_20261030_101355",
+        "live_20261030_104920",
+        "live_20261030_105903",
+        "live_20261030_120041",
+        "live_20261030_122816",
+        "live_20261030_123408",
+        "live_20261030_123545",
+        "live_20261030_131248",
+        "live_20261030_133846",
+        "live_20261030_152546"
+      ]
+    }
+  ],
+  "clips": {
+    "cav_walk1": {
+      "title": "Lobby: person crosses the zone",
+      "group": "Restricted area (zone intrusion)",
+      "note": "expected positive"
+    },
+    "cav_walk2": {
+      "title": "Lobby: person passes next to the zone",
+      "group": "Restricted area (zone intrusion)",
+      "note": "near-miss negative"
+    },
+    "cav_browse4": {
+      "title": "Lobby: nobody enters the zone",
+      "group": "Restricted area (zone intrusion)",
+      "note": "negative"
+    },
+    "cav_enter1f_m": {
+      "title": "Shop front: people enter, mannequin excluded",
+      "group": "Restricted area (zone intrusion)",
+      "note": "positive"
+    },
+    "cav_noenter1f_m": {
+      "title": "Shop front: people pass by",
+      "group": "Restricted area (zone intrusion)",
+      "note": "negative"
+    },
+    "bagleftreal": {
+      "title": "Bag left, owner walks away",
+      "group": "Unattended object",
+      "note": "expected positive"
+    },
+    "bagstays": {
+      "title": "Bag stays with someone nearby",
+      "group": "Unattended object",
+      "note": "expected negative"
+    },
+    "caviar_leftbag_01": {
+      "title": "CAVIAR left bag",
+      "group": "Unattended object",
+      "note": "failed-detector: the bag was never detected"
+    },
+    "cav_enter1": {
+      "title": "Shop door: enter",
+      "group": "Known limitations",
+      "note": "short entry window under the 1.0 s dwell: missed"
+    },
+    "cav_noenter1": {
+      "title": "Shop door: no enter",
+      "group": "Known limitations",
+      "note": "short entry window under the 1.0 s dwell: missed"
+    },
+    "cav_enter1f": {
+      "title": "Shop front: enter",
+      "group": "Known limitations",
+      "note": "first run: a shop mannequin was detected as a person, 5 of 8 events"
+    },
+    "cav_noenter1f": {
+      "title": "Shop front: no enter",
+      "group": "Known limitations",
+      "note": "first run: a shop mannequin was detected as a person, 5 of 8 events"
+    },
+    "cav_fall1": {
+      "title": "Fall on the floor",
+      "group": "Not processed yet",
+      "note": "fall rule not implemented"
+    },
+    "cav_slump1": {
+      "title": "Slump on the floor",
+      "group": "Not processed yet",
+      "note": "fall rule not implemented"
+    },
+    "cav_chair1": {
+      "title": "Person in a chair",
+      "group": "Not processed yet",
+      "note": "not processed yet"
+    },
+    "cav_pastshop1": {
+      "title": "Past the shop, corridor",
+      "group": "Not processed yet",
+      "note": "not processed yet"
+    },
+    "cav_pastshop1f": {
+      "title": "Past the shop, front",
+      "group": "Not processed yet",
+      "note": "not processed yet"
+    },
+    "live_20261030_101355": {
+      "title": "live_20261030_101355",
+      "group": "Recorded and uploaded",
+      "note": "recorded from the webcam"
+    },
+    "live_20261030_104920": {
+      "title": "live_20261030_104920",
+      "group": "Recorded and uploaded",
+      "note": "recorded from the webcam"
+    },
+    "live_20261030_105903": {
+      "title": "live_20261030_105903",
+      "group": "Recorded and uploaded",
+      "note": "recorded from the webcam"
+    },
+    "live_20261030_120041": {
+      "title": "live_20261030_120041",
+      "group": "Recorded and uploaded",
+      "note": "recorded from the webcam"
+    },
+    "live_20261030_122816": {
+      "title": "live_20261030_122816",
+      "group": "Recorded and uploaded",
+      "note": "recorded from the webcam"
+    },
+    "live_20261030_123408": {
+      "title": "live_20261030_123408",
+      "group": "Recorded and uploaded",
+      "note": "recorded from the webcam"
+    },
+    "live_20261030_123545": {
+      "title": "live_20261030_123545",
+      "group": "Recorded and uploaded",
+      "note": "live monitor recording"
+    },
+    "live_20261030_131248": {
+      "title": "live_20261030_131248",
+      "group": "Recorded and uploaded",
+      "note": "live monitor recording"
+    },
+    "live_20261030_133846": {
+      "title": "live_20261030_133846",
+      "group": "Recorded and uploaded",
+      "note": "live monitor recording"
+    },
+    "live_20261030_152546": {
+      "title": "live_20261030_152546",
+      "group": "Recorded and uploaded",
+      "note": "live monitor recording"
+    }
+  }
+}

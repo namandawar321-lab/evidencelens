@@ -1,0 +1,170 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "cav_noenter1",
+    "camera_id": "cav_noenter1",
+    "source_dataset": "CAVIAR",
+    "licence": "CC BY-SA, attribution required",
+    "consent_basis": "n/a",
+    "fps_native": 25.0,
+    "fps_processed": 12.5,
+    "frame_count": 725,
+    "duration_s": 29.0,
+    "resolution": [
+      384,
+      288
+    ],
+    "sha256": "632abce432c74c39a9036bcdb5481a431f8c32d7cb50680c031299aba0e79ae9"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "cav_noenter1",
+      "polygon": [
+        [
+          50,
+          83
+        ],
+        [
+          79,
+          88
+        ],
+        [
+          81,
+          204
+        ],
+        [
+          49,
+          210
+        ]
+      ],
+      "label": "shop door",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-2",
+      "class": "person",
+      "class_votes": {
+        "person": 23
+      },
+      "t_start": 1.44,
+      "t_end": 4.0,
+      "n_frames": 23,
+      "mean_conf": 0.614,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-3",
+      "class": "person",
+      "class_votes": {
+        "person": 295
+      },
+      "t_start": 3.92,
+      "t_end": 27.44,
+      "n_frames": 295,
+      "mean_conf": 0.899,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-4",
+      "class": "person",
+      "class_votes": {
+        "person": 268
+      },
+      "t_start": 6.88,
+      "t_end": 28.88,
+      "n_frames": 268,
+      "mean_conf": 0.765,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-5",
+      "class": "person",
+      "class_votes": {
+        "person": 150
+      },
+      "t_start": 16.32,
+      "t_end": 28.88,
+      "n_frames": 150,
+      "mean_conf": 0.82,
+      "fragmented": false,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-11",
+      "class": "handbag",
+      "class_votes": {
+        "handbag": 10
+      },
+      "t_start": 22.56,
+      "t_end": 24.8,
+      "n_frames": 10,
+      "mean_conf": 0.535,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-14",
+      "class": "person",
+      "class_votes": {
+        "person": 11
+      },
+      "t_start": 28.08,
+      "t_end": 28.88,
+      "n_frames": 11,
+      "mean_conf": 0.731,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        29.0
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        29.0
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": true,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 2,
+    "person_tracks": 5
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.5,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T01:20:54+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

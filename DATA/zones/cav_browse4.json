@@ -1,0 +1,24 @@
+{
+  "zone_id": "Z1",
+  "camera_id": "cav_browse4",
+  "polygon": [
+    [
+      102,
+      74
+    ],
+    [
+      93,
+      112
+    ],
+    [
+      145,
+      110
+    ],
+    [
+      152,
+      61
+    ]
+  ],
+  "label": "reception desk area",
+  "version": 1
+}

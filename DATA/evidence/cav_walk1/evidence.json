@@ -1,0 +1,157 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "cav_walk1",
+    "camera_id": "cav_walk1",
+    "source_dataset": "CAVIAR",
+    "licence": "CC BY-SA, attribution required",
+    "consent_basis": "n/a",
+    "fps_native": 25.0,
+    "fps_processed": 12.5,
+    "frame_count": 619,
+    "duration_s": 24.76,
+    "resolution": [
+      384,
+      288
+    ],
+    "sha256": "b27f3d1a2abe378cc1f4067c923a2e92a5cf6e72f2dc450cbcbb4cca3be7e0f3"
+  },
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "camera_id": "cav_walk1",
+      "polygon": [
+        [
+          196,
+          67
+        ],
+        [
+          178,
+          170
+        ],
+        [
+          308,
+          175
+        ],
+        [
+          306,
+          69
+        ]
+      ],
+      "label": "side patch",
+      "version": 1
+    }
+  ],
+  "tracks": [
+    {
+      "track_id": "TRK-2",
+      "class": "person",
+      "class_votes": {
+        "person": 51
+      },
+      "t_start": 2.16,
+      "t_end": 6.72,
+      "n_frames": 51,
+      "mean_conf": 0.843,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-8",
+      "class": "person",
+      "class_votes": {
+        "person": 39
+      },
+      "t_start": 11.44,
+      "t_end": 16.96,
+      "n_frames": 39,
+      "mean_conf": 0.626,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-10",
+      "class": "person",
+      "class_votes": {
+        "person": 10
+      },
+      "t_start": 12.16,
+      "t_end": 13.6,
+      "n_frames": 10,
+      "mean_conf": 0.607,
+      "fragmented": true,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 1,
+    "min_frames": 5
+  },
+  "events": [
+    {
+      "type": "zone_intrusion",
+      "t_start": 3.68,
+      "t_end": 5.44,
+      "track_ids": [
+        "TRK-2"
+      ],
+      "zone_id": "Z1",
+      "rule_id": "zone_intrusion",
+      "rule_version": "v1",
+      "thresholds": {
+        "dwell_min_s": 1.0,
+        "exit_min_s": 1.0,
+        "conf_min": 0.4
+      },
+      "rule_trace": "foot point of TRK-2 inside zone Z1 from 3.7s to 5.4s (dwell 1.8s, minimum 1.0s), detection conf >= 0.4",
+      "confidence": 0.843,
+      "event_id": "EV-0001",
+      "status": "confirmed_by_rule",
+      "supporting_frames": [
+        "frames/EV-0001_start.jpg",
+        "frames/EV-0001_end.jpg"
+      ],
+      "clip_path": "clips/EV-0001.mp4"
+    }
+  ],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        24.76
+      ]
+    ],
+    "zone_intrusion": [
+      [
+        0.0,
+        24.76
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": true,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 4
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 960,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.5,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-30T01:20:06+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}

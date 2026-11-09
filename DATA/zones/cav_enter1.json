@@ -1,0 +1,24 @@
+{
+  "zone_id": "Z1",
+  "camera_id": "cav_enter1",
+  "polygon": [
+    [
+      50,
+      83
+    ],
+    [
+      79,
+      88
+    ],
+    [
+      81,
+      204
+    ],
+    [
+      49,
+      210
+    ]
+  ],
+  "label": "shop door",
+  "version": 1
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "2.0-poc",
+  "video": {
+    "video_id": "caviar_leftbag_01",
+    "camera_id": "caviar_leftbag_01",
+    "source_dataset": "CAVIAR",
+    "licence": "CC BY-SA (per CAVIAR page)",
+    "consent_basis": "n/a",
+    "fps_native": 24.776,
+    "fps_processed": 12.388,
+    "frame_count": 1440,
+    "duration_s": 58.12,
+    "resolution": [
+      384,
+      288
+    ],
+    "sha256": "cd40062c7fd62ecd9eaffbc4b4444c60ac96adec241ccef8f2948d1f7d64b8a2"
+  },
+  "zones": [],
+  "tracks": [
+    {
+      "track_id": "TRK-1",
+      "class": "person",
+      "class_votes": {
+        "person": 63
+      },
+      "t_start": 0.323,
+      "t_end": 7.184,
+      "n_frames": 63,
+      "mean_conf": 0.674,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-4",
+      "class": "person",
+      "class_votes": {
+        "person": 91
+      },
+      "t_start": 8.637,
+      "t_end": 18.485,
+      "n_frames": 91,
+      "mean_conf": 0.68,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-13",
+      "class": "person",
+      "class_votes": {
+        "person": 80
+      },
+      "t_start": 34.065,
+      "t_end": 42.379,
+      "n_frames": 80,
+      "mean_conf": 0.758,
+      "fragmented": true,
+      "keypoints_available": false
+    },
+    {
+      "track_id": "TRK-17",
+      "class": "person",
+      "class_votes": {
+        "person": 34
+      },
+      "t_start": 50.774,
+      "t_end": 54.165,
+      "n_frames": 34,
+      "mean_conf": 0.731,
+      "fragmented": false,
+      "keypoints_available": false
+    }
+  ],
+  "tracks_omitted_short": {
+    "count": 2,
+    "min_frames": 5
+  },
+  "events": [],
+  "coverage": {
+    "unattended_object": [
+      [
+        0.0,
+        58.12
+      ]
+    ],
+    "fall": []
+  },
+  "negative_eligible": {
+    "unattended_object": false,
+    "zone_intrusion": false,
+    "fall": false
+  },
+  "detector_summary": {
+    "bag_tracks": 0,
+    "person_tracks": 6
+  },
+  "provenance": {
+    "detector": "ultralytics-yolo11",
+    "weights": "yolo11s.pt",
+    "tracker": "bytetrack.yaml",
+    "imgsz": 1280,
+    "conf_threshold": 0.4,
+    "fps_processed": 12.388,
+    "frame_stride": 2,
+    "code_commit": "unknown",
+    "run_time_utc": "2026-10-27T03:40:29+00:00"
+  },
+  "limits": [
+    "single fixed camera; distances are in owner-height units (uncalibrated)",
+    "rule thresholds are design assumptions, not tuned",
+    "no identification of people; no intent, guilt or medical inference"
+  ]
+}
